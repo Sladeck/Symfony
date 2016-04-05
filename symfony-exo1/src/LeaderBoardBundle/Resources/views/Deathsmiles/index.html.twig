@@ -1,0 +1,25 @@
+{% extends 'leaderboard/pink.html.twig' %}
+
+{% block title %}DeathSmiles{% endblock %}
+
+{% block body %}
+    <h1>DeathSmiles</h1>
+    <br>
+
+    <table class="table table-hover">
+        <tr>
+            <th>Windia</th>
+            <th>Casper</th>
+            <th>Follett</th>
+            <th>Rosa</th>
+            <th>Sakura</th>
+        </tr>
+        <tr>
+            <td><img src="{{ asset('img/windia.png') }}" alt="Windia"></td>
+            <td><img src="{{ asset('img/casper.png') }}" alt="Casper"></td>
+            <td><img src="{{ asset('img/follett.png') }}" alt="Follett"></td>
+            <td><img src="{{ asset('img/rosa.png') }}" alt="Rosa"></td>
+            <td><img src="{{ asset('img/sakura.png') }}" alt="Sakura"></td>
+        </tr>
+    </table>
+{% endblock %}

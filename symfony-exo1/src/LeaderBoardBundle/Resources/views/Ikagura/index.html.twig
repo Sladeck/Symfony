@@ -1,0 +1,68 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ikaruga{% endblock %}
+
+{% block stylesheets %}
+    {% if bg is defined %}
+        {% if bg == 'black' %}
+            <link rel="stylesheet" href="{{ asset('css/black-bg.css') }}">
+        {% endif %}
+    {% endif %}
+{% endblock %}
+
+{% block body %}
+    <h1>Ikaruga</h1>
+    <nav class="navbar-default">
+        <hr>
+        <ol class="breadcrumb">
+            <li><a href="/ikaruga/white">Clair</a></li>
+            <li><a href="/ikaruga/black">Sombre</a></li>
+        </ol>
+        <hr>
+    </nav>
+
+    <div class="responsive-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XUDd2ZdRlOE" frameborder="0"
+                allowfullscreen></iframe>
+    </div>
+
+    <h3>Zoli tableau</h3>
+    <table class="table table-hover">
+        <tr>
+            <th>1st Chain</th>
+            <td>100 points</td>
+        </tr>
+        <tr>
+            <th>2nd Chan</th>
+            <td>200 points</td>
+        </tr>
+        <tr>
+            <th>3rd Chain</th>
+            <td>400 points</td>
+        </tr>
+        <tr>
+            <th>4th Chain</th>
+            <td>800 points</td>
+        </tr>
+        <tr>
+            <th>5th Chain</th>
+            <td>1600 points</td>
+        </tr>
+        <tr>
+            <th>6th Chain</th>
+            <td>3200 points</td>
+        </tr>
+        <tr>
+            <th>7th Chain</th>
+            <td>6400 points</td>
+        </tr>
+        <tr>
+            <th>8th Chain</th>
+            <td>12800 points</td>
+        </tr>
+        <tr>
+            <th>Max Chain</th>
+            <td>25600 points</td>
+        </tr>
+    </table>
+{% endblock %}

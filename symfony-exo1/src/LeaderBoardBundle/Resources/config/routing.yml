@@ -1,0 +1,17 @@
+leaderboard_homepage:
+    path:     /
+    defaults: { _controller: LeaderBoardBundle:Default:index }
+
+deathsmiles:
+    path:     /deathsmiles
+    defaults: { _controller: LeaderBoardBundle:Pink:deathsmiles }
+
+crimzon_clover:
+    path:     /crimzon_clover
+    defaults: { _controller: LeaderBoardBundle:NotPink:crimzonClover }
+
+crimzon_clover_type:
+    path:     /crimzon_clover/{type}
+    defaults: { _controller: LeaderBoardBundle:NotPink:crimzonCloverType }
+    requirements:
+      type:   type[13Z]

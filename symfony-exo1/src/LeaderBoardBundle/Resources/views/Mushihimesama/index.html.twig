@@ -1,0 +1,22 @@
+{% extends 'leaderboard/pink.html.twig' %}
+
+{% block title %}Mushihimesama{% endblock %}
+
+{% block body %}
+    <h1>Mushihimesama</h1>
+    <br>
+
+    <blockquote cite="http://www.unhaiku.com/une-rose-seule-c-est-toutes-les-roses-2858.html">
+        Une rose seule, c'est toutes les roses
+        et celle-ci: l'irremplaçable,
+        le parfait, le souple vocable
+        encadré par le texte des choses.
+    </blockquote>
+    <br>
+
+    <img src="{{ asset('img/boss.jpg') }}" alt="True Last Boss" class="img-responsive center-block">
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/pink.css') }}">
+{% endblock %}
